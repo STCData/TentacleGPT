@@ -1,4 +1,41 @@
+
+
 # 𐂠TentacleGPT
+
+
+TentacleGPT is a user-friendly UI editor and program for executing a network of GPT nodes to generate complex multimodal documents such as comic books, presentations, screenplays, legal documents, websites, and software.
+
+## Features
+
+- Create and customize a network of GPT nodes with unique prompts and abilities
+- Monitor the output of each node
+- Regenerate or freeze the output of each node
+- View the history of each generation
+- Support for text to text generators like chatgpt, gpt4, llama, and other models
+- Support for text to image generators like stable diffusion
+- Create subgraphs to group related nodes
+
+## Getting Started
+
+1. Download TentacleGPT
+2. Create a new node and define its prompt and model
+3. Connect nodes together in the network
+4. Monitor the output and history of each node
+5. Generate complex multimodal documents
+
+## Applications
+
+The potential applications of TentacleGPT are vast and can redefine the landscape of content creation by leveraging the power of AI technology.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Acknowledgments
+
+- The GPT models that power TentacleGPT
+- The community for their continued support and contributions to the field of AI technology
+
 
 
           ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣴⣶⣶⣤⣤⣤⣶⣤⡄
