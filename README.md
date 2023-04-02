@@ -48,17 +48,6 @@ https://user-images.githubusercontent.com/309302/229374993-6d29e07c-aebd-4721-bf
 
 The potential applications of TentacleGPT are vast and can redefine the landscape of content creation by leveraging the power of AI technology.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-## Acknowledgments
-
-- The GPT models that power TentacleGPT
-- The community for their continued support and contributions to the field of AI technology
-
-
-
 
 
 
@@ -74,4 +63,9 @@ To get started, simply create a new node and define its prompt and model. You ca
 
 TentacleGPT also allows for the creation of subgraphs, enabling you to group together related nodes and streamline the generation process.
 
-So what are you waiting for? Download TentacleGPT today and experience the power of GPT networks for yourself!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+
