@@ -9,26 +9,26 @@ import SwiftUI
 import UIKit
 
 struct NodeView: View, Identifiable {
-    var id: UUID = UUID()
+    var id: UUID = .init()
     @State var demoMode = false
     @State var holding = false
-    @ObservedObject var nodeData : NodeData
-    @EnvironmentObject var nodeCanvasData : NodeCanvasData
-    @EnvironmentObject var environment : Environment
-    
+    @ObservedObject var nodeData: NodeData
+    @EnvironmentObject var nodeCanvasData: NodeCanvasData
+    @EnvironmentObject var environment: Environment
+
     @State private var savedOffset: CGPoint = .zero
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
             Text("\(nodeData.title)")
                 .font(.title3.monospaced())
                 .allowsHitTesting(false)
-            
+
             if !nodeData.inControlPorts.isEmpty || !nodeData.outControlPorts.isEmpty {
-                Text("CONTROL FLOW")
-                    .foregroundColor(Color.blue.opacity(0.8))
-                    .font(.caption.bold().monospaced())
-                    .allowsHitTesting(false)
+//                Text("CONTROL FLOW")
+//                    .foregroundColor(Color.blue.opacity(0.8))
+//                    .font(.caption.bold().monospaced())
+//                    .allowsHitTesting(false)
             }
             HStack(alignment: .top) {
                 if !nodeData.inControlPorts.isEmpty {
@@ -40,8 +40,7 @@ struct NodeView: View, Identifiable {
                     .padding(.all, 4)
                     .layoutPriority(1)
                 }
-                
-                
+
                 if !nodeData.outControlPorts.isEmpty {
                     VStack(alignment: .trailing) {
                         ForEach(nodeData.outControlPorts) { nodePortData in
@@ -54,7 +53,7 @@ struct NodeView: View, Identifiable {
             }
             .background(Color.blue.opacity(0.3))
             .mask(RoundedRectangle(cornerRadius: 6))
-            
+
             if !nodeData.inDataPorts.isEmpty || !nodeData.outDataPorts.isEmpty {
                 Text("DATA FLOW")
                     .foregroundColor(Color.green.opacity(0.8))
@@ -71,8 +70,7 @@ struct NodeView: View, Identifiable {
                     .padding(.all, 4)
                     .layoutPriority(1)
                 }
-                
-                
+
                 if !nodeData.outDataPorts.isEmpty {
                     VStack(alignment: .trailing) {
                         ForEach(nodeData.outDataPorts) { nodePortData in
@@ -85,15 +83,15 @@ struct NodeView: View, Identifiable {
             }
             .background(Color.green.opacity(0.3))
             .mask(RoundedRectangle(cornerRadius: 6))
-            
+
             if let customView = type(of: nodeData).getDefaultCustomRendering(node: nodeData) {
-                Text("CUSTOM VIEW")
-                    .foregroundColor(Color.orange.opacity(0.8))
-                    .font(.caption.bold().monospaced())
-                    .allowsHitTesting(false)
+//                Text("CUSTOM VIEW")
+//                    .foregroundColor(Color.orange.opacity(0.8))
+//                    .font(.caption.bold().monospaced())
+//                    .allowsHitTesting(false)
                 customView
             }
-            
+
             if environment.debugMode {
                 Text("DEBUG VIEW")
                     .foregroundColor(Color.pink.opacity(0.8))
@@ -106,7 +104,7 @@ struct NodeView: View, Identifiable {
         }
         .padding(.all, 8)
         .background(
-            Color.init(uiColor: (environment.enableBlurEffectOnNodes ? UIColor.clear : UIColor.tertiarySystemGroupedBackground))
+            Color(uiColor: environment.enableBlurEffectOnNodes ? UIColor.clear : UIColor.tertiarySystemGroupedBackground)
                 .contentShape(RoundedRectangle(cornerRadius: 8))
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .named("canvas"))
                     .onChanged { value in
@@ -146,9 +144,7 @@ struct NodeView: View, Identifiable {
                     } icon: {
                         Image(systemName: "xmark")
                     }
-
                 }
-
             }
         })
         .overlay(
@@ -165,5 +161,4 @@ struct NodeView: View, Identifiable {
         .animation(.easeInOut, value: holding)
         .animation(.easeInOut, value: nodeData.canvasPosition)
     }
-    
 }

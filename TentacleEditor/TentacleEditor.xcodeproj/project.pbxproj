@@ -45,6 +45,11 @@
 		9A3B282A29D9E693006F770F /* UserDefaults+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B282929D9E693006F770F /* UserDefaults+SwiftUI.swift */; };
 		9A3B282C29D9E6A7006F770F /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B282B29D9E6A7006F770F /* PreferenceManager.swift */; };
 		9A3B282E29D9E6B6006F770F /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B282D29D9E6B6006F770F /* BaseManager.swift */; };
+		9A3B283229D9EADF006F770F /* PrintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B283029D9EADF006F770F /* PrintNode.swift */; };
+		9A3B283329D9EADF006F770F /* RandomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B283129D9EADF006F770F /* RandomNode.swift */; };
+		9A3B283529D9EBBB006F770F /* TextToTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B283429D9EBBB006F770F /* TextToTextNode.swift */; };
+		9A3B283829D9EFAE006F770F /* TextToImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B283629D9EFAE006F770F /* TextToImageNode.swift */; };
+		9A3B283929D9EFAE006F770F /* UserTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B283729D9EFAE006F770F /* UserTextNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +111,11 @@
 		9A3B282929D9E693006F770F /* UserDefaults+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SwiftUI.swift"; sourceTree = "<group>"; };
 		9A3B282B29D9E6A7006F770F /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 		9A3B282D29D9E6B6006F770F /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		9A3B283029D9EADF006F770F /* PrintNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintNode.swift; sourceTree = "<group>"; };
+		9A3B283129D9EADF006F770F /* RandomNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNode.swift; sourceTree = "<group>"; };
+		9A3B283429D9EBBB006F770F /* TextToTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToTextNode.swift; sourceTree = "<group>"; };
+		9A3B283629D9EFAE006F770F /* TextToImageNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToImageNode.swift; sourceTree = "<group>"; };
+		9A3B283729D9EFAE006F770F /* UserTextNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTextNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +166,7 @@
 		9A3B278A29D9DFDC006F770F /* TentacleEditor */ = {
 			isa = PBXGroup;
 			children = (
+				9A3B27CC29D9E08D006F770F /* Nodes */,
 				9A3B282F29D9E70A006F770F /* Managers */,
 				9A3B280C29D9E251006F770F /* Helpers */,
 				9A3B27CA29D9E08D006F770F /* Data */,
@@ -212,7 +223,6 @@
 		9A3B27CA29D9E08D006F770F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				9A3B27CC29D9E08D006F770F /* Nodes */,
 				9A3B27DF29D9E08D006F770F /* NodeCanvasData.swift */,
 				9A3B27E029D9E08D006F770F /* NodePortData.swift */,
 				9A3B27E129D9E08D006F770F /* NodePortConnectionData.swift */,
@@ -225,7 +235,12 @@
 		9A3B27CC29D9E08D006F770F /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				9A3B283629D9EFAE006F770F /* TextToImageNode.swift */,
+				9A3B283729D9EFAE006F770F /* UserTextNode.swift */,
+				9A3B283029D9EADF006F770F /* PrintNode.swift */,
+				9A3B283129D9EADF006F770F /* RandomNode.swift */,
 				9A3B27DC29D9E08D006F770F /* StartNode.swift */,
+				9A3B283429D9EBBB006F770F /* TextToTextNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -402,6 +417,7 @@
 				9A3B281E29D9E251006F770F /* CoreGraphics+Hashable.swift in Sources */,
 				9A3B27C929D9E06D006F770F /* NodeCanvasToolbarView.swift in Sources */,
 				9A3B280529D9E08D006F770F /* CGVectorNodeDataPort.swift in Sources */,
+				9A3B283829D9EFAE006F770F /* TextToImageNode.swift in Sources */,
 				9A3B280129D9E08D006F770F /* NodePortData.swift in Sources */,
 				9A3B27C529D9E06D006F770F /* NodeView.swift in Sources */,
 				9A3B281829D9E251006F770F /* Bundle+Version.swift in Sources */,
@@ -410,11 +426,13 @@
 				9A3B281B29D9E251006F770F /* String+Identifiable.swift in Sources */,
 				9A3B27C429D9E06D006F770F /* NodeCanvasView.swift in Sources */,
 				9A3B282229D9E4F5006F770F /* NodeCanvasNavigationView.swift in Sources */,
+				9A3B283329D9EADF006F770F /* RandomNode.swift in Sources */,
 				9A3B282C29D9E6A7006F770F /* PreferenceManager.swift in Sources */,
 				9A3B27FD29D9E08D006F770F /* StartNode.swift in Sources */,
 				9A3B278E29D9DFDC006F770F /* ContentView.swift in Sources */,
 				9A3B281629D9E251006F770F /* Collection+Nil.swift in Sources */,
 				9A3B278C29D9DFDC006F770F /* TentacleEditorApp.swift in Sources */,
+				9A3B283529D9EBBB006F770F /* TextToTextNode.swift in Sources */,
 				9A3B281929D9E251006F770F /* Any+Equatable.swift in Sources */,
 				9A3B282829D9E5C7006F770F /* ToggleButtonView.swift in Sources */,
 				9A3B282529D9E52C006F770F /* EnvironmentManager.swift in Sources */,
@@ -425,12 +443,14 @@
 				9A3B282E29D9E6B6006F770F /* BaseManager.swift in Sources */,
 				9A3B27C329D9E06D006F770F /* NodeCanvasMinimapView.swift in Sources */,
 				9A3B280429D9E08D006F770F /* CGFloatNodeDataPort.swift in Sources */,
+				9A3B283229D9EADF006F770F /* PrintNode.swift in Sources */,
 				9A3B27C229D9E06D006F770F /* NodeAddSelectionView.swift in Sources */,
 				9A3B281A29D9E251006F770F /* Class+Runtime.swift in Sources */,
 				9A3B280629D9E08D006F770F /* IntNodeDataPort.swift in Sources */,
 				9A3B280229D9E08D006F770F /* NodePortConnectionData.swift in Sources */,
 				9A3B281729D9E251006F770F /* SwiftUI+Conditional.swift in Sources */,
 				9A3B27C729D9E06D006F770F /* NodePortView.swift in Sources */,
+				9A3B283929D9EFAE006F770F /* UserTextNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
