@@ -1,14 +1,25 @@
-# TentacleGPT
+# 𐂠TentacleGPT
 
- _______  _______  _______           _______  _______  _______  _______          
-(  ____ )(  ___  )(  ____ \|\     /|(  ____ \(  ____ )(  ____ \(  ____ \|\     /|
-| (    )|| (   ) || (    \/| )   ( || (    \/| (    )|| (    \/| (    \/| )   ( |
-| (____)|| (___) || |      | |   | || (__    | (____)|| (__    | (__    | |   | |
-|     __)|  ___  || |      | |   | ||  __)   |     __)|  __)   |  __)   | |   | |
-| (\ (   | (   ) || |      | |   | || (      | (\ (   | (      | (      | |   | |
-| ) \ \__| )   ( || (____/\| (___) || (____/\| ) \ \__| (____/\| (____/\| (___) |
-|/   \__/|/     \|(_______/(_______)(_______/|/   \__/(_______/(_______/(_______)
 
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣴⣶⣶⣤⣤⣤⣶⣤⡄
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⡿⠟⠛⠛⠛⠿⣿⣿⣧⠀⠀
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠃⠀⠀⠀⠀⠀⠘⣿⣿⣷⣶⡄
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣯⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠛⠁
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣦⡀⠀⠀⠀⠀⠀⢸⣿⣿⣤⣄
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠿⠿⠿⠿⠋⠀⢸⣿⣿⣿⣿
+                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⠋⠉⠁
+                      ⠀⠀⠀⠀⠀⣠⣶⣶⣶⣶⣶⣤⣄⣀⣀⣀⣤⣶⣿⣿⣿⡀⠀⠀
+                      ⠀⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀
+                      ⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⢿⣿⣿⣿⠉⠀⠀⠉⠀⠀⠀
+                      ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠸⠿⠿⠿⠀⠀⠀⠀⠀⠀⠀
+                      ⢠⣿⣿⣿⣿⣿⡿⠛⢿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                      ⠸⠿⠿⠿⠿⠿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+
+
+
+TentacleGPT is a UI editor and program that facilitates the execution of a network of GPT nodes to generate complex multimodal documents such as comic books, presentations, screenplays, legal documents, websites, and software. The nodes can consist of text to text generators like chatgpt, gpt4, llama, and other models, as well as text to image generators such as stable diffusion. TentacleGPT enables users to monitor the output of nodes, regenerate or freeze results, and view the history of each generation. The program also supports nodes that can generate the description of the network of nodes and subgraphs. The potential applications of TentacleGPT are vast, and it promises to redefine the landscape of content creation by leveraging the power of AI technology
+ 
 Welcome to TentacleGPT, a user-friendly UI editor and program for executing a network of GPT nodes!
 
 TentacleGPT allows you to easily create and customize a network of GPT nodes, each with their own unique prompts and abilities. The program enables you to monitor the output of each node, regenerate it, freeze it, and view the history of generations.
