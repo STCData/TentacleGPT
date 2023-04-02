@@ -15,13 +15,12 @@ extension CGPoint: Hashable {
     }
 }
 
-extension CGSize : Hashable {
+extension CGSize: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(width)
         hasher.combine(height)
     }
 }
-
 
 extension CGRect: Hashable {
     public func hash(into hasher: inout Hasher) {

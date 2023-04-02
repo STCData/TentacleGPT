@@ -7,40 +7,30 @@
 
 import Foundation
 
-
-
-
-public func setupAllBaseManagers() -> Void {
+public func setupAllBaseManagers() {
     let list = subclasses(of: BaseManager.self)
-    list.forEach { (manager) in
+    list.forEach { manager in
         manager.shared.setup()
     }
 }
 
-
-public func destroyAllBaseManagers() -> Void {
+public func destroyAllBaseManagers() {
     let list = subclasses(of: BaseManager.self)
-    list.forEach { (manager) in
+    list.forEach { manager in
         manager.shared.destroy()
     }
 }
 
-
-class EnvironmentManager : BaseManager {
-    
+class EnvironmentManager: BaseManager {
     static let instance = EnvironmentManager()
-    
+
     override class var shared: EnvironmentManager {
         return instance
     }
-    
-    let environment : Environment = Environment()
-    
-    override func setup() {
-        
-    }
-    
-    override func destroy() {
-        
-    }
+
+    let environment: Environment = .init()
+
+    override func setup() {}
+
+    override func destroy() {}
 }

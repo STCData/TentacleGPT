@@ -156,7 +156,8 @@
 		9A3B278A29D9DFDC006F770F /* TentacleEditor */ = {
 			isa = PBXGroup;
 			children = (
-				9A3B280C29D9E251006F770F /* Helper */,
+				9A3B282F29D9E70A006F770F /* Managers */,
+				9A3B280C29D9E251006F770F /* Helpers */,
 				9A3B27CA29D9E08D006F770F /* Data */,
 				9A3B27B529D9E06D006F770F /* NodeCanvas */,
 				9A3B278B29D9DFDC006F770F /* TentacleEditorApp.swift */,
@@ -240,12 +241,9 @@
 			path = NodePorts;
 			sourceTree = "<group>";
 		};
-		9A3B280C29D9E251006F770F /* Helper */ = {
+		9A3B280C29D9E251006F770F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9A3B27CB29D9E08D006F770F /* Environment.swift */,
-				9A3B282329D9E52C006F770F /* EnvironmentManager.swift */,
-				9A3B282B29D9E6A7006F770F /* PreferenceManager.swift */,
 				9A3B280D29D9E251006F770F /* Collection+Nil.swift */,
 				9A3B282929D9E693006F770F /* UserDefaults+SwiftUI.swift */,
 				9A3B280E29D9E251006F770F /* SwiftUI+Conditional.swift */,
@@ -257,7 +255,17 @@
 				9A3B281529D9E251006F770F /* CoreGraphics+Hashable.swift */,
 				9A3B282D29D9E6B6006F770F /* BaseManager.swift */,
 			);
-			path = Helper;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9A3B282F29D9E70A006F770F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9A3B27CB29D9E08D006F770F /* Environment.swift */,
+				9A3B282329D9E52C006F770F /* EnvironmentManager.swift */,
+				9A3B282B29D9E6A7006F770F /* PreferenceManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

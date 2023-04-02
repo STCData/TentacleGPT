@@ -11,7 +11,7 @@ import Foundation
 struct UserDefault<T> {
     let key: String
     let defaultValue: T
-    var postSetHandler : ((T,T) -> Void)?
+    var postSetHandler: ((T, T) -> Void)?
 
     var wrappedValue: T {
         get {

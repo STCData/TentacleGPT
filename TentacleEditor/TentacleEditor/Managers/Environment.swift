@@ -5,13 +5,11 @@
 //  Created by fincher on 4/18/22.
 //
 
-import Foundation
 import Combine
+import Foundation
 import SwiftUI
 
-class Environment : ObservableObject {
-    
-    
+class Environment: ObservableObject {
     @UserDefault(key: "useContextMenuOnNodes", defaultValue: true)
     var useContextMenuOnNodes: Bool
     @UserDefault(key: "enableBlurEffectOnNodes", defaultValue: false)
@@ -25,10 +23,9 @@ class Environment : ObservableObject {
     @UserDefault(key: "provideConnectionHint", defaultValue: true)
     var provideConnectionHint: Bool
 
-
     private var notificationSubscription: AnyCancellable?
     init() {
-        notificationSubscription = NotificationCenter.default.publisher(for: UserDefaults.didChangeNotification).sink { notif in
+        notificationSubscription = NotificationCenter.default.publisher(for: UserDefaults.didChangeNotification).sink { _ in
             DispatchQueue.main.async {
                 self.objectWillChange.send()
             }
